@@ -13,7 +13,7 @@ class Message:
         if(len(self.menu_diff["dropped"])>0):
             if(len(self.menu_diff["new"])>0):
                recap += ", "
-            recap += str(len(self.menu_diff["new"])) + " Dropped"
+            recap += str(len(self.menu_diff["dropped"])) + " Dropped"
         return datetime.datetime.now().strftime("%Y-%m-%d") + " | Big Spoon Menu: " + recap
 
 
